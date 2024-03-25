@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Live stream</h1>
-    <video  id="dplayer"></video >
+    <video id="dplayer"></video >
   </div>
 </template>
 
@@ -22,35 +22,49 @@ export default {
   mounted() {
     if (flvjs.isSupported()) {
         var videoElement = document.getElementById('dplayer');
-        var flvPlayer = flvjs.createPlayer({
+        if(videoElement) {
+          var flvPlayer = flvjs.createPlayer({
             type: 'flv',
             url: 'https://pull.niur.live/live/stream-9912060_lhd.flv?txSecret=d270064b33342945cfdfaa1243c3b19f&txTime=6601d390'
-        });
-        flvPlayer.attachMediaElement(videoElement);
-        flvPlayer.load();
-        flvPlayer.play();
+          });
+          flvPlayer.attachMediaElement(videoElement);
+          flvPlayer.load();
+          
+        }
     }
-    //const dp = new DPlayer({
-    //  container: document.getElementById('dplayer'),
-    //  video: {
-    //      url: 'https://pull.niur.live/live/stream-9912060_lhd.flv?txSecret=d270064b33342945cfdfaa1243c3b19f&txTime=6601d390'
-    //  },
-    //});
-    //dp.play()
+    let vii = flvPlayer.play();
+    if (vii!== undefined) {
+      vii.then(() => {
+        flvPlayer.play();
+      }).catch(error => {
+        console.log('error :>> ', error);
+      })
+    }
+  },
+  computed(){
 
   },
   watch() {
     if (flvjs.isSupported()) {
-        var videoElement = document.getElementById('dplayer');
+      var videoElement = document.getElementById('dplayer');
+      if(videoElement) {
         var flvPlayer = flvjs.createPlayer({
-            type: 'flv',
-            url: 'https://pull.niur.live/live/stream-9912060_lhd.flv?txSecret=d270064b33342945cfdfaa1243c3b19f&txTime=6601d390'
+          type: 'flv',
+          url: 'https://pull.niur.live/live/stream-9912060_lhd.flv?txSecret=d270064b33342945cfdfaa1243c3b19f&txTime=6601d390'
         });
         flvPlayer.attachMediaElement(videoElement);
-        flvPlayer.load();
-        flvPlayer.play();
+      }
     }
+    let vii = flvPlayer.play();
+    if (vii!== undefined) {
+    vii.then(() => {
+      flvPlayer.play();
+    }).catch(error => {
+      console.log('error :>> ', error);
+    });
+}
   },
+  
 }
 </script>
 
