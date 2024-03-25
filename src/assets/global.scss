@@ -1,0 +1,51 @@
+.el-message-box__title {
+  font-weight: 600;
+}
+.el-pagination.is-background .btn-next, .el-pagination.is-background .btn-prev, .el-pagination.is-background .el-pager li {
+  border-radius: 4px;
+  background-color: $neutral--100;
+}
+.el-form-item__label {
+  line-height: 20px;
+}
+.el-form-item.is-required {
+  & > .el-form-item__label::after,
+  & .el-form-item__label-wrap > .el-form-item__label::after {
+    content: '*';
+    color: $neutral--800;
+    margin-left: 4px;
+  }
+  & > .el-form-item__label {
+    padding: 0 0 4px 0;
+  }
+}
+.el-input-group--append {
+  .el-input-group__append,
+  .el-input-group__prepend {
+    background-color: #FFFFFF;
+    color: $neutral--800;
+    .el-button {
+      padding: 0 12px;
+    }
+  }
+}
+.el-date-editor  {
+  .el-range__icon,
+  .el-range-separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.el-input--suffix {
+  .el-input__suffix:has(.is-pipe) {
+    &:before {
+      content: '';
+      border-left: 1px solid $neutral--400;
+      position: absolute;
+      height: 20px;
+      left: -4px;
+      top: 8px;
+    }  
+  }
+}

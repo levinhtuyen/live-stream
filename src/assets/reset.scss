@@ -1,0 +1,191 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Inter', sans-serif;
+
+	vertical-align: baseline;
+}
+input::placeholder {
+	font-family: 'Inter', sans-serif;
+
+}
+textarea::placeholder {
+	font-family: 'Inter', sans-serif;
+
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+
+}
+
+// Input
+.el-input.is-disabled .el-input__inner {
+	background-color: #FAFAFA;
+	color: #424242;
+}
+.el-input .el-input__prefix i{
+	color: #BDBDBD;
+}
+.el-input.is-disabled .el-input__prefix i{
+	color: #E0E0E0;
+}
+.el-input.is-disabled .el-input__inner::placeholder {
+	color: #E0E0E0
+}
+.el-input .el-input__inner::placeholder {
+	color: #BDBDBD
+}
+.el-input__inner:focus {
+	border-color: #2196F3;
+}
+
+// Input Area
+.el-textarea.is-disabled .el-textarea__inner {
+	background-color: #FAFAFA;
+	color: #424242;
+}
+.el-textarea.is-disabled .el-textarea__inner::placeholder {
+	color: #E0E0E0;
+}
+.el-textarea .el-textarea__inner::placeholder {
+	color: #BDBDBD;
+}
+.el-textarea__inner:focus {
+	border-color: #2196F3;
+}
+
+
+// Error Validation
+.el-form-item__error {
+	color: #E64A19;
+}
+.el-form-item.is-error .el-input__inner, .el-form-item.is-error .el-input__inner:focus, .el-form-item.is-error .el-textarea__inner, .el-form-item.is-error .el-textarea__inner:focus {
+	border-color: #E64A19
+}
+
+// Tag
+.el-tag.el-tag--info {
+	background-color: #FAFAFA;
+	color: #616161;
+}
+.el-tag.el-tag--info .el-tag__close {
+	background-color: #FAFAFA;
+	font-size: 16px;
+	color: #616161;
+}
+
+// Select
+.el-select-dropdown.is-multiple .el-select-dropdown__item.selected {
+	color: #2196F3;
+	font-weight: 400;
+}
+
+// Radio
+.el-radio__input.is-disabled+span.el-radio__label {
+	color: #E0E0E0;
+}
+.el-radio__input.is-disabled.is-checked .el-radio__inner {
+	border-color: #BBDEFB;
+	background-color:#BBDEFB;
+}
+.el-radio__input.is-disabled.is-checked .el-radio__inner::after {
+	background-color: #FFFFFF;
+}
+.el-radio.is-bordered.is-checked.is-disabled {
+	border-color: #BBDEFB;
+}
+
+// Checkbox
+.el-checkbox.is-bordered.is-disabled.is-checked {
+	border-color: #BBDEFB;
+}
+.el-checkbox__input.is-disabled+span.el-checkbox__label {
+	color: #E0E0E0;
+}
+.el-checkbox__input.is-disabled .el-checkbox__inner {
+	background-color: #F5F5F5;
+	border-color: #F5F5F5;
+}
+.el-checkbox__input.is-disabled.is-checked .el-checkbox__inner {
+	background-color: #BBDEFB;
+	border-color: #BBDEFB;
+}
+.el-checkbox.is-bordered.is-disabled .el-checkbox__input.is-checked .el-checkbox__inner {
+	background-color: #BBDEFB;
+}
+.el-checkbox__input.is-disabled.is-checked+.el-checkbox__label {
+	color: #BBDEFB;
+}
+.el-checkbox__input.is-disabled.is-checked .el-checkbox__inner::after {
+	box-sizing: content-box;
+	content: "";
+	border: 1px solid #fff;
+	border-left: 0;
+	border-top: 0;
+	height: 7px;
+	left: 4px;
+	position: absolute;
+	top: 1px;
+	transform: rotate(45deg) scaleY(0);
+	width: 3px;
+	transition: transform .15s ease-in .05s;
+	transform-origin: center;
+	transform: rotate(45deg) scaleY(1);
+}
+
+// Switch
+.el-switch__core {
+	background: #F5F5F5;
+	border: 1px solid #F5F5F5;
+}
+.el-switch__label {
+	color: #424242;
+}
+.el-switch.is-disabled .el-switch__label {
+	color: #BDBDBD;
+}
+.el-switch.is-disabled .el-switch__label.is-active {
+	color: #BBDEFB;
+}
+.el-switch.is-checked.is-disabled .el-switch__core {
+	background: #BBDEFB;
+	border: 1px solid #BBDEFB;
+}
