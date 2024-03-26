@@ -2,14 +2,7 @@
   <div>
     <video style="cursor: pointer;" @click="changePausePlay(flvPlayer)" controls  autoplay="true"
     muted="muted" id="dplayer"></video >
-    <div class="controls">
-      <button onclick="flv_load()">Load</button>
-      <button onclick="flv_start()">Start</button>
-      <button onclick="flv_pause()">Pause</button>
-      <button onclick="flv_destroy()">Destroy</button>
-      <input style="width:100px" type="text" name="seekpoint"/>
-      <button onclick="flv_seekto()">SeekTo</button>
-  </div>
+
   </div>
 </template>
 
@@ -33,7 +26,7 @@ export default {
           var videoElement = document.getElementById('dplayer');
           this.flvPlayer = flvjs.createPlayer({
               type: 'flv',
-              url: 'https://pull06.scstream.net/live/stream-9912085_lhd.flv?auth_key=1711465268-0-0-f0b39ecc217264c451b8e9991de7cf3c',
+              url: 'https://pull.niur.live/live/stream-9911977_lhd.flv?txSecret=142c26b5237987f33880f069d5ee66cc&txTime=66032b64',
 
           });
           this.flvPlayer.attachMediaElement(videoElement);
@@ -42,6 +35,7 @@ export default {
           
       }
     })
+    
   },
   updated: function () {
     this.$nextTick(function () {
@@ -49,7 +43,7 @@ export default {
           var videoElement = document.getElementById('dplayer');
           this.flvPlayer = flvjs.createPlayer({
               type: 'flv',
-              url: 'https://pull06.scstream.net/live/stream-9912085_lhd.flv?auth_key=1711465268-0-0-f0b39ecc217264c451b8e9991de7cf3c'
+              url: 'https://pull.niur.live/live/stream-9911977_lhd.flv?txSecret=142c26b5237987f33880f069d5ee66cc&txTime=66032b64'
           });
           this.flvPlayer.attachMediaElement(videoElement);
           this.flvPlayer.load();
@@ -63,7 +57,8 @@ export default {
       console.log('this.flvPlayer :>> ', this.flvPlayer);
       var videoElement = document.getElementById('dplayer');
       console.log('videoElement :>> ', videoElement);
-    }
+    },
+    
   },
 }
 </script>
