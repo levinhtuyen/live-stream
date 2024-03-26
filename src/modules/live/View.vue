@@ -25,7 +25,7 @@ export default {
         var videoElement = document.getElementById('dplayer');
         var flvPlayer = flvjs.createPlayer({
             type: 'flv',
-            url: 'https://pull.niur.live/live/stream-9912035_lhd.flv?txSecret=d50d022f56a54817ee16181b76653075&txTime=6601f604'
+            url: 'https://pull.niur.live/live/stream-9912060_lhd.flv?txSecret=af63bc5f4bca3fc80be6a4ff9ef2d6ce&txTime=66032024'
         });
         flvPlayer.attachMediaElement(videoElement);
         flvPlayer.load();
@@ -39,7 +39,7 @@ export default {
         var videoElement = document.getElementById('dplayer');
         var flvPlayer = flvjs.createPlayer({
             type: 'flv',
-            url: 'https://pull.niur.live/live/stream-9912035_lhd.flv?txSecret=d50d022f56a54817ee16181b76653075&txTime=6601f604'
+            url: 'https://pull.niur.live/live/stream-9912060_lhd.flv?txSecret=af63bc5f4bca3fc80be6a4ff9ef2d6ce&txTime=66032024'
         });
         flvPlayer.attachMediaElement(videoElement);
         flvPlayer.load();
