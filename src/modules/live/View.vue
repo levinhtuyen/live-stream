@@ -47,7 +47,7 @@ export default {
         screenshot: true,
         hotkey: true,
         video: {
-            url: 'https://pull06.scstream.net/live/stream-9912015_lhd.flv?auth_key=1711469708-0-0-b9f1364cb137bb2f7086241868410c81',
+            url: 'https://pull.niur.live/live/stream-9911977_lhd.flv?txSecret=8612e79a19806a1dc0c0f8b91c345532&txTime=66046ed4',
             type: 'customFlv',
             
             customType: {
@@ -73,7 +73,7 @@ export default {
     //      var videoElement = document.getElementById('dplayer');
     //      this.flvPlayer = flvjs.createPlayer({
     //          type: 'flv',
-    //          url: 'https://pull06.scstream.net/live/stream-9912015_lhd.flv?auth_key=1711469708-0-0-b9f1364cb137bb2f7086241868410c81'
+    //          url: 'https://pull.niur.live/live/stream-9911977_lhd.flv?txSecret=8612e79a19806a1dc0c0f8b91c345532&txTime=66046ed4'
     //      });
     //      this.flvPlayer.attachMediaElement(videoElement);
     //      this.flvPlayer.load();
@@ -97,7 +97,7 @@ export default {
     //        },
     //    },
     //    video: {
-    //        url: 'https://pull06.scstream.net/live/stream-9912015_lhd.flv?auth_key=1711469708-0-0-b9f1364cb137bb2f7086241868410c81',
+    //        url: 'https://pull.niur.live/live/stream-9911977_lhd.flv?txSecret=8612e79a19806a1dc0c0f8b91c345532&txTime=66046ed4',
     //        type: 'customHls',
     //        customType: {
     //            customHls: function (video) {
@@ -115,13 +115,13 @@ export default {
     //    container: document.getElementById('dplayer'),
     //    live: true,
     //    video: {
-    //        url: 'https://pull06.scstream.net/live/stream-9912015_lhd.flv?auth_key=1711469708-0-0-b9f1364cb137bb2f7086241868410c81',
+    //        url: 'https://pull.niur.live/live/stream-9911977_lhd.flv?txSecret=8612e79a19806a1dc0c0f8b91c345532&txTime=66046ed4',
     //        type: 'customHls',
     //        customType: {
     //          customHls: function (video) {
     //            console.log('video :>> ', video);
     //              const hls = new Hls();
-    //              hls.media = 'https://pull06.scstream.net/live/stream-9912015_lhd.flv?auth_key=1711469708-0-0-b9f1364cb137bb2f7086241868410c81'
+    //              hls.media = 'https://pull.niur.live/live/stream-9911977_lhd.flv?txSecret=8612e79a19806a1dc0c0f8b91c345532&txTime=66046ed4'
     //              console.log('hls :>> ', hls);
     //          },
     //      },
